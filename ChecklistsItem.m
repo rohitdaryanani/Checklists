@@ -13,6 +13,7 @@
 @end
 
 @implementation ChecklistsItem
+
 @synthesize text, checked;
 
 
@@ -23,8 +24,7 @@
         //
     }
     
-    return self
-    ;
+    return self;
 }
 
 @end

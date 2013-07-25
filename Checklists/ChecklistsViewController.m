@@ -34,21 +34,21 @@
     item.text = @"Brush my teeth";
     item.checked = YES;
     [items addObject:item];
-    
+
     item = [[ChecklistsItem alloc] init];
     item.text = @"Learn iOS development";
     item.checked = YES;
     [items addObject:item];
-    
+
     item = [[ChecklistsItem alloc] init];
     item.text = @"Soccer practice";
     item.checked = NO;
     [items addObject:item];
-    
+
     item = [[ChecklistsItem alloc] init];
     item.text = @"Eat ice cream";
     item.checked = YES;
-    [items addObject:items];
+    [items addObject:itemPu];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,7 +59,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return [items count];
 }
 
 - (void)configureCheckmarkForCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
